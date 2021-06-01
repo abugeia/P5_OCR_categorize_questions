@@ -13,3 +13,7 @@ python=3.9.4=h6244533_0
 regex=2021.4.4=pypi_0
 scikit-learn=0.24.1=py39hf11a4ad_0
 seaborn=0.11.1=pyhd3eb1b0_0
+gensim=4.0.1
+python-Levenshtein=0.12.2
+plotly=4.14.3
+wordcloud=1.8.1

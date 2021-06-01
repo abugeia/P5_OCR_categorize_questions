@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+Html, body{
+		height:100%;
+	}
+
+.grandParentContaniner{
+		display:table; height:100%; margin: 0 auto;
+	}
+.parentContainer{
+		display:table-cell; vertical-align:middle;
+	}
+input, label {
+    display:block;
+}	
+</style>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form</title>
+</head>
+<body>
+<div class="grandParentContaniner">
+    <div class="parentContainer">
+        <form method="post">
+            <div>
+                <label for="title">Titre:</label>
+                <textarea id="title" name="Titre" rows="5" cols="60"></textarea>
+                
+            </div>
+            <div>
+                <label for="question"> Question :</label>
+                <textarea id="question" name="Question" rows="5" cols="60"></textarea>
+            </div>
+            <input type="submit">
+        </form>
+        <p>Result: Type a question</p>
+    </div>
+</div>
+
+</body>
+</html>

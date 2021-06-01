@@ -1,2 +1,5 @@
 .vscode
 .ipynb_checkpoints
+functions/__pycache__
+temp
+__pycache__

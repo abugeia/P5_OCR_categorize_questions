@@ -15,9 +15,15 @@ else:
     # URL avec clé :
     METEO_API_URL = "https://api.openweathermap.org/data/2.5/forecast?lat=48.883587&lon=2.333779&appid=" + METEO_API_KEY
 
-@app.route("/")
+@app.route("/<a>/<b>")
 def hello(a, b):
-    return a + b
+    c = str(int(a) + int(b))
+    return c
+
+@app.route('/taggen/')
+def taggen():
+    return render_template("taggen.html")
+
 
 @app.route('/dashboard/')
 def dashboard():
