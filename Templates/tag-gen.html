@@ -32,19 +32,20 @@ input, label {
 <body>
 <div class="grandParentContaniner">
     <div class="parentContainer">
-        <form method="post">
+        <img src="/static/sof.png" height="100"/>
+        <form method="POST">
             <div>
                 <label for="title">Titre:</label>
-                <textarea id="title" name="Titre" rows="5" cols="60"></textarea>
+                <textarea id="title" name="titre" rows="5" cols="60"></textarea>
                 
             </div>
             <div>
                 <label for="question"> Question :</label>
-                <textarea id="question" name="Question" rows="5" cols="60"></textarea>
+                <textarea id="question" name="question" rows="5" cols="60"></textarea>
             </div>
             <input type="submit">
         </form>
-        <p>Result: Type a question</p>
+        <p>Result: {{ href }}</p>
     </div>
 </div>
 
