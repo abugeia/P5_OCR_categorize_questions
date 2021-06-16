@@ -15,14 +15,18 @@ else:
     # URL avec clé :
     METEO_API_URL = "https://api.openweathermap.org/data/2.5/forecast?lat=48.883587&lon=2.333779&appid=" + METEO_API_KEY
 
+@app.route('/')
+def hello():
+    return 'Hello, World!'
+
 @app.route("/<a>/<b>")
 def hello(a, b):
     c = str(int(a) + int(b))
     return c
 
-@app.route('/taggen/')
-def taggen():
-    return render_template("taggen.html")
+@app.route('/tag-gen/')
+def tag_gen():
+    return render_template("tag-gen.html")
 
 
 @app.route('/dashboard/')
@@ -88,3 +92,31 @@ def get_news():
 if __name__ == "__main__":
     app.run(debug=True)
 
+
+
+from app.src.main import Predict
+
+app = Flask(_name_)
+
+
+
+
+
+@app.route('/predict/<path:path_X_test>')
+def predict(path_X_test):
+    """
+    Example: 
+    path_X_test=app/data/dataset_single.csv
+    Link: 
+        http://127.0.0.1:5000/predict/app/data/dataset_single.csv
+    """
+    isinstance(path_X_test, str)
+    y_pred = Predict(path_X_test)
+    return {'status': 'OK', 'y_pred': y_pred.tolist()}
+
+
+if _name_ == '_main_':
+    app.run('0.0.0.0', 5000)
+
+
+postman pour tester les API
