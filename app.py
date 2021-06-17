@@ -11,7 +11,7 @@ import re
 import nltk
 # nltk.download('punkt')
 # nltk.download('stopwords')
-# nltk.download('wordnet')
+nltk.download('wordnet')
 from nltk.corpus import stopwords
 import contractions
 import joblib
