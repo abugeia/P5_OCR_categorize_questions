@@ -2,7 +2,7 @@
 # from crypt import methods
 from flask import Flask, render_template, jsonify, request
 # import json
-import requests
+# import requests
 # from functions import *
 import numpy as np
 import pandas as pd
