@@ -11,6 +11,14 @@ The dataset is from Stackoverflow.
 
 Use requirements.txt for the librairies
 
+## Notice
+
+You can try this tag generator at this address : http://supertag3000.herokuapp.com/predict/
+Type your question and submit, the algorithm will propose you 3 words as tags for the question.
+
+To use it in local clone the repository, install requirements.txt and start app.py
+
+
 ## References
 
 Stackoverflow data :     https://data.stackexchange.com/stackoverflow/query/new  
